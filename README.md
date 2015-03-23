@@ -15,9 +15,18 @@ Creates sugar http methods for [Mithril.js][mithril] existing request library
 - Download [the latest package][download]
 - NPM: `npm install mithril-requests`
 
+## Setup
+
+```js
+var m = require('mithril')
+var requests = require('mithril-requests')
+
+m = requests(m)
+```
+
 ## Documentation
 
-### m.request.[verb](url[, options])
+### m.request.verb(url[, options])
 
 Sugar method to invoke an XHR request on the underlying [`m.request`][mithril-request] method, fully supporting
 [all options][mithril-request-signature] with no difference in api other than seperating out the `url` value.
