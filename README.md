@@ -29,7 +29,7 @@ m = requests(m)
 ### m.request.verb(url[, options])
 
 Sugar method to invoke an XHR request on the underlying [`m.request`][mithril-request] method, fully supporting
-[all options][mithril-request-signature] with no difference in api other than seperating out the `url` value.
+[all options][mithril-request-signature] with no difference in api other than seperating out the `url` and `method` values.
 
 #### Example
 
