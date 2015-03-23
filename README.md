@@ -93,7 +93,7 @@ Licensed under [The MIT License](LICENSE).
 [david-url]: https://david-dm.org/Nijikokun/mithril-requests
 [david-image]: https://img.shields.io/david/Nijikokun/mithril-requests.svg?style=flat
 
-[download]: https://github.com/Nijikokun/mithril-requests/archive/v1.2.0.zip
+[download]: https://github.com/Nijikokun/mithril-requests/archive/v1.0.0.zip
 [mithril]: https://github.com/lhorie/mithril.js
 [mithril-request]: http://lhorie.github.io/mithril/mithril.request.html
 [mithril-request-signature]: http://lhorie.github.io/mithril/mithril.request.html#signature
