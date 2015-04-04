@@ -1,9 +1,9 @@
-/**
- * Plugin Constructor
- *
- * @param {Object} m Mithril
- */
-function Plugin (m) {
+(function (definition) {
+  /* istanbul ignore next: differing implementations */
+  if (typeof module != 'undefined' && module.exports) module.exports = definition
+  else if (typeof define == 'function' && define.amd) define(definition)
+  else this.m = definition(this.m)
+})(function Plugin (m) {
   /**
    * Verbs to be aliased to request facades.
    *
@@ -36,7 +36,7 @@ function Plugin (m) {
     'patch',
     'search',
     'connect'
-  ];
+  ]
 
   /**
    * Generates a helper function that passes the specified HTTP
@@ -76,23 +76,14 @@ function Plugin (m) {
         }
       }
 
-      return m.request(request);
+      return m.request(request)
     }
   }
 
   // Generate exposed facades from verb list
   for (var index in verbs) {
-    m.request[verbs[index]] = requestVerbGenerator(verbs[index]);
+    m.request[verbs[index]] = requestVerbGenerator(verbs[index])
   }
 
   return m
-}
-
-/* istanbul ignore next: differing implementations */
-if (typeof module !== 'undefined' && module !== null && module.exports) {
-  module.exports = Plugin
-} else if (typeof define === 'function' && define.amd) {
-  define(['mithril'], Plugin)
-} else if (typeof window !== 'undefined') {
-  Plugin(m)
-}
+})

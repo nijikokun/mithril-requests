@@ -1,6 +1,6 @@
 {
   "name": "mithril-requests",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adds sugar http methods to Mithril.js",
   "main": "mithril.requests.js",
   "scripts": {
